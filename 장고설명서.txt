@@ -1,3 +1,7 @@
+https://windybay.net/post/3/ - 장고배포 가이드
+
+
+
 06-27
 1. writer 이란 app 만들기
 2. writer 앱 settings 에 등록

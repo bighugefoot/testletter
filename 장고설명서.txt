@@ -1,0 +1,26 @@
+06-27
+1. writer 이란 app 만들기
+2. writer 앱 settings 에 등록
+3. config urls 에서 urls 경로 설정 (writer urls 로넘기기)
+4. writer urls 에서 writer view 로 넘기기
+5. view 에서 template 의 index.html 띄우게 하기
+
+6. writer 의 model 만들기
+
+06-28
+
+7. model index.html 에 띄우기
+8. html 에서 db 저장할 수 있도록 하는  페이지 만들기
+- form.py 작성
+- form 을 띄워줄 letterwrite.html 만들기
+- letterwrite.html 에 form 연결
+06.29
+- 인편작성으로 이동하게 하는 url 설정 (views.writer 로 이동)
+- views 에서 writer 함수 정의 (form 뜨게)
+
+07.04
+-form 따로 안만들고 html 에 직접 form 만들어서 각 name 을 지정 후 view 에서 post 로 request 를 받았을 때 받은 각 name 을 mdoel 객체와 연결해준다.
+- request.post[name] 을 변수로 the_campy_sender로 보낸 후 the_campy_sender 을 실행하여 보낸다.
+- jquery 를 이용해 letterwrite.html 에 글자수 세기 기능을 추가해 주었다.
+
+

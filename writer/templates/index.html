@@ -1,0 +1,38 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>내가 직접 만든 블로그</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+<h1>국방의 의무를 다하는 세영이에게 응원의 한마디를 보내주세요!</h1>
+<br>
+<br>
+<div class="container">
+    <p>세영이에게 지금까지 간 인터넷편지 목록(최근5개)</p>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <td><B>이름</B></td>
+            <td><B>제목</B></td>
+            <td><B>작성일</B></td>
+        </tr>
+        </thead>
+        <tbody>
+        {% for 인편 in 인편_latest %}
+        <tr>
+            <td>{{인편.작성자}}</td>
+            <td>{{인편.제목}}</td>
+            <td>{{인편.작성일}}</td>
+        </tr>
+        {% endfor %}
+        <tbody>
+    </table>
+    <a href="/writer/letterwrite"><button class="btn btn-primary" type="button">인편쓰러가기</button></a>
+</body>
+</html>

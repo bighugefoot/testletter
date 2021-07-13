@@ -25,14 +25,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-)@nnfp@&^$s-u$mnky^6x#i9hij_w3jq%_ajcpifx-wr=49ey)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
 
 # Application definition
 
-INSTALLED_APPS = [
+INSTALLED_APPS = [ #앱생성하면 여기다가 등록해야함
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'writer',
+    'accounts',
+    'bootstrap4',
 ]
 
 MIDDLEWARE = [
@@ -54,10 +56,10 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'config.urls'
 
-TEMPLATES = [
+TEMPLATES = [ # 템플릿 경로 설정
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')], # base.html 들어있는 templates 경로설정
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

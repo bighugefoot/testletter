@@ -1,6 +1,9 @@
 https://windybay.net/post/3/ - 장고배포 가이드
-
-
+https://ssungkang.tistory.com/entry/Django-10-%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85%EB%A1%9C%EA%B7%B8%EC%9D%B8%EB%A1%9C%EA%B7%B8%EC%95%84%EC%9B%83-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0
+- 장고 회원가입, 로그인, 로그아웃 구현하기
+https://www.ordinarycoders.com/blog/article/custom-user-login-forms -로그인 form design
+https://ssungkang.tistory.com/entry/Django-%ED%85%9C%ED%94%8C%EB%A6%BF-%EC%96%B8%EC%96%B4%EC%97%90-%EB%8C%80%ED%95%B4-%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90?category=320582
+- HTML 안에서 사용되는 템플릿 언어에 대한 설명
 
 06-27
 1. writer 이란 app 만들기
@@ -26,5 +29,13 @@ https://windybay.net/post/3/ - 장고배포 가이드
 -form 따로 안만들고 html 에 직접 form 만들어서 각 name 을 지정 후 view 에서 post 로 request 를 받았을 때 받은 각 name 을 mdoel 객체와 연결해준다.
 - request.post[name] 을 변수로 the_campy_sender로 보낸 후 the_campy_sender 을 실행하여 보낸다.
 - jquery 를 이용해 letterwrite.html 에 글자수 세기 기능을 추가해 주었다.
+
+
+고찰
+- 회원가입 창 만들기
+1. 모델을 만든다.
+2. 모델을 migrate 시킨다.
+3. 회원가입 form 과 model 를 연결시켜 db 에 저장한다.
+
 
 

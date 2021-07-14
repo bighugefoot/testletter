@@ -35,7 +35,7 @@ def writer(request):
        # return render(request, 'letterwrite.html', message_dict)
         # message_dict 를 html 로 넘김(key 값이 탬플릿에서 사용할 변수 이름, value 값이 파이썬 변수가 됨
        # message_dict['error']
-    elif request.method == 'POST':
+    if request.method == 'POST':
         작성자 = request.POST['작성자']  # 템플릿에서 입력한 name필드에 있는 값을 키값으로 받아옴
         제목 = request.POST['제목']
         내용 = request.POST['내용']

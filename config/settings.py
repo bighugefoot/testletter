@@ -40,7 +40,6 @@ INSTALLED_APPS = [ #앱생성하면 여기다가 등록해야함
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'writer',
-    'accounts',
     'bootstrap4',
 ]
 

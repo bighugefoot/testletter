@@ -47,7 +47,9 @@ def writer(request):
         )
 
         보낼값.save()  # 데이터베이스에 저장
+
+        messages.add_message(request, messages.SUCCESS, '보내기 성공하였습니다.')
         the_campy_sender.send(작성자, 제목, 내용)
-        messages.add_message(request, messages.INFO, 'Hello world.')
-        return render(request, 'letterwrite.html')
+
+        return render(request, 'result.html')
 

@@ -28,8 +28,8 @@ def writer(request):
     내용 = request.POST['내용']
     message_dict = {'작성자': 작성자, '제목': 제목, '내용': 내용}  # error handling 에 필요한 딕셔너리 만들어준거
 
-    if len(작성자) == 0:
-        return JsonResponse({'message' : '작성자를 입력해주세요'}, status=400)
+    #if len(작성자) == 0:
+        #return JsonResponse({'message' : '작성자를 입력해주세요'}, status=400)
         #message_dict['error'] = "작성자를 입력해 주세요!"  # 딕셔너리에 error 항목 추가하기
     #if 'error' in message_dict:
        # return render(request, 'letterwrite.html', message_dict)

@@ -1,13 +1,17 @@
-<html>
+
 {% extends 'base.html' %}
 <body>
 {% block content %}
 <div class="container">
     <div class="row mt-5">
         <div class="col-12 text-center">
-            <h1>재성이에게 <br>인편을 보내주세요!</h1>
+            <h1>재덕이에게 <br>인편을 보내주세요!</h1>
+            <p><b>손편지로 보내시려면 :경기도 연천군 청산면 청창로474
+106-16-3호 9중대4소대 B침실 156교번 훈련병 유재덕 </b></p>
+            <p><b>여기서 작성하는 인편은 재덕이에게 더캠프 서버를 통해 직접 전달됩니다.(재덕이만 볼 수 있음)</b></p>
         </div>
     </div>
+
     <div class="row mt-5">
         <div class="col-12">
             {{ error }}
@@ -63,13 +67,14 @@
 
     </script>
                 </div>
-                <button type="submit" class="btn btn-primary">보내기</button>
+                <button type="submit" class="btn btn-primary" >보내기</button>
                 <a href="/writer"><button class="btn btn-primary" type="button">목록</button></a>
             </form>
         </div>
     </div>
 </div>
-
+<footer>
+    만든이: 권순우
+</footer>
 {% if error %}<p style="color:red"><strong>{{ error }}</strong></p>{% endif %}
 {% endblock %}
-</html>

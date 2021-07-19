@@ -5,14 +5,13 @@
 <br>
 <div class="container">
 
-<h2>국방의 의무를 다하는 재성이에게 응원의 한마디를 보내주세요!</h2>
+<h2>국방의 의무를 다하는 재덕이에게 응원의 한마디를 보내주세요!</h2>
     <br>
-    <p>재성이에게 지금까지 간 인터넷편지 목록(최근5개)</p>
+    <p>재덕이에게 지금까지 간 인터넷편지 목록(최근5개)</p>
     <table class="table table-striped">
         <thead>
         <tr>
             <td><B>이름</B></td>
-            <td><B>제목</B></td>
             <td><B>작성일</B></td>
         </tr>
         </thead>
@@ -20,12 +19,12 @@
         {% for 인편 in 인편_latest %}
         <tr>
             <td>{{인편.작성자}}</td>
-            <td>{{인편.제목}}</td>
             <td>{{인편.작성일}}</td>
         </tr>
         {% endfor %}
         </tbody>
     </table>
-    <a href="/writer/letterwrite"><button class="btn btn-primary" type="button">인편쓰러가기</button></a>
+    <a href="/jason/letterwrite"><button class="btn btn-primary" type="button">인편쓰러가기</button></a>
 </div>
+
 {% endblock %}
